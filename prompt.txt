@@ -1,0 +1,21 @@
+Atue como um Engenheiro de Software Sênior especialista em Inteligência Artificial e algoritmos evolutivos. Escreva um código em Python puro (sem bibliotecas externas como numpy ou DEAP, use apenas bibliotecas nativas como `random` e `string`) que implemente um Algoritmo Genético clássico.
+O Desafio: O algoritmo deve "adivinhar" uma palavra secreta. A palavra-alvo (target) padrão será a string `"ANCHIETA"`.
+Especificações Técnicas:
+
+1. População: A população inicial deve ser composta por indivíduos que são strings aleatórias contendo exatamente 8 letras maiúsculas do alfabeto (ex: `"XZKJRLMQ"`). Acompanhe isso permitindo configurar o tamanho da população.
+2. Função de Fitness: A pontuação (fitness) de cada indivíduo deve ser calculada estritamente pela quantidade de letras corretas na posição exata em relação à palavra-alvo. O fitness irá variar de 0 a 8.
+3. Evolução (Seleção, Cruzamento e Mutação):
+   * O código deve selecionar os melhores indivíduos de cada geração.
+   * Realizar o cruzamento (crossover) para gerar novos filhos.
+   * Aplicar uma taxa de mutação (substituir aleatoriamente uma letra por outra) para garantir diversidade.
+   * Importante: A taxa de mutação deve ser uma variável de fácil acesso e alteração no início do código, pois realizarei testes mudando ela para `0`.
+4. Critério de Parada: O algoritmo deve rodar em loop e parar imediatamente quando um indivíduo alcançar o fitness máximo (8), ou seja, quando a palavra "ANCHIETA" surgir.
+
+Saída esperada:
+
+* O código deve imprimir no console o melhor indivíduo de cada geração (Ex: `Geração 1 | Melhor: AKCHIETX | Fitness: 6`).
+* Ao finalizar, deve imprimir o total de gerações necessárias para encontrar a palavra secreta.
+* Código limpo, comentado e otimizado para rodar diretamente no terminal.
+
+
+Além disso, quero que configure o layout do terminal para melhor percepção da saída
